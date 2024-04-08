@@ -8,7 +8,7 @@ const Hero = (props: Props) => {
         <h1 className='text-3xl sm:text-4xl md:text-6xl md:leading-normal'>
           News for every urban toursit!
         </h1>
-        <button className='text-xl text-white font-bold bg-lime-600 boarder-2 rounded shadow-[0.25rem_0.25rem_0px_0px_rgba(0,0,0,0.85)] px-4 sm:px-6 py-2 sm:py-4 mt-4'>
+        <button className='text-xl text-white font-bold bg-green-400 boarder-2 rounded shadow-[0.3rem_0.3rem_0px_0px_rgba(0,0,0,0.85)] px-4 sm:px-6 py-2 sm:py-4 mt-4'>
           Explore more
         </button>
       </div>
