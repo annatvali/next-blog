@@ -12,11 +12,11 @@ const NewBlogForm = (props: Props) => {
   const [content, setContent] = useState<string>('');
   const [submitted, setSubmitted] = useState<boolean>(false);
 
-  // if(!session && status !== "loading") return (
-  //   <div>
-  //     <p>You need to sign in to add a new blog</p>
-  //   </div>
-  // );
+  if(!session && status !== "loading") return (
+    <div>
+      <p>You need to sign in to add a new blog</p>
+    </div>
+  );
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -30,12 +30,12 @@ const NewBlogForm = (props: Props) => {
       console.error(error);
     }
   }
-  
-  // if (submitted) return (
-  //   <>
-  //     <h2 className='text-6xl font-semibold mb-20'>Post Submitted!!</h2>
-  //   </>
-  // );
+
+  if (submitted) return (
+    <>
+      <h2 className='text-6xl font-semibold mb-20'>Post Submitted!!</h2>
+    </>
+  );
 
   return (
     <div className='flex flex-col'>
