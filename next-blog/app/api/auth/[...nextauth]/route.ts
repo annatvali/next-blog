@@ -1,13 +1,14 @@
-import NextAuth from "next-auth";
+import NextAuth, { Account, User } from "next-auth";
 import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { PrismaClient } from '@prisma/client';
+import { AdapterUser } from "next-auth/adapters";
 
 const prisma = new PrismaClient();
 
 const handler = NextAuth({
-  adapter: PrismaAdapter(prisma),
+  adapter: PrismaAdapter(prisma) as any,
   providers: [
     GithubProvider({
       clientId: process.env.GITHUB_ID as string,
@@ -30,11 +31,31 @@ const handler = NextAuth({
       }
       return token;
     },
-    async session({ session, token }) {
-      if (session.user) {
-        session.user.id = token.id;
+    async signIn({
+      user,
+      account,
+      profile,
+    }: {
+      user: User | AdapterUser;
+      account: Account | null;
+      profile?: any;
+    }) {
+      let imageUrl;
+
+      if (account?.provider === 'google') {
+        imageUrl = profile.image;
+      } else if (account?.provider === 'github') {
+        imageUrl = profile.avatar_url;
       }
-      return session;
+
+      if (imageUrl) {
+        await prisma.user.update({
+          where: { id: parseInt(user.id) },
+          data: { image: imageUrl },
+        });
+      }
+
+      return true;
     },
   },
   secret: process.env.NEXTAUTH_URLSecret as string,

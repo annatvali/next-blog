@@ -3,6 +3,9 @@ import { useState } from 'react';
 import { useSession} from 'next-auth/react';
 import { createPost } from '@/actions/publishPost';
 
+import "@uploadthing/react/styles.css";
+import { UploadButton } from "@/utils/uploadthings"
+
 type Props = {};
 
 const NewBlogForm = (props: Props) => {
@@ -10,6 +13,7 @@ const NewBlogForm = (props: Props) => {
 
   const [title, setTitle] = useState<string>('');
   const [content, setContent] = useState<string>('');
+  const [thumbnail, setThumbnail] = useState<string | null>('');
   const [submitted, setSubmitted] = useState<boolean>(false);
 
   if(!session && status !== "loading") return (
@@ -24,7 +28,7 @@ const NewBlogForm = (props: Props) => {
 
     if (!userId) return;
     try {
-      const post = await createPost({ title, content, authorId: userId  });
+      const post = await createPost({ title, content, authorId: userId, imgUrl: thumbnail });
       setSubmitted(true);
     } catch (error) {
       console.error(error);
@@ -57,6 +61,25 @@ const NewBlogForm = (props: Props) => {
           placeholder='Content'
           className='text-xl border-2 rounded focus-visible:outline-none shadow-[0.3rem_0.3rem_0px_0px_rgba(0,0,0,0.85)] p-4'
         ></textarea>
+        <div className='text-xl font-bold py-12 flex items-baseline gap-8 self-start'>
+          <label className='text-stale-400'>
+            Add thumbnail image
+          </label>
+          <UploadButton
+            endpoint='imageUploader'
+            onClientUploadComplete={(res) => {
+              // Do something with the response
+              console.log('Files: ', res);
+              if (res) {
+                setThumbnail(res[0].url);
+              }
+            }}
+            onUploadError={(error: Error) => {
+              // Do something with the error.
+              alert(`ERROR! ${error.message}`);
+            }}
+          />
+        </div>
         <button
           type='submit'
           className='w-fit-content text-2xl text-white font-bold rounded p-4 bg-indigo-600'

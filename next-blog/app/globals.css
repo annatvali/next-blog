@@ -16,12 +16,20 @@
   }
 }
 
-body {
-
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .container-sm {
+    @apply max-w-xs mx-auto sm:max-w-xl;
+  }
+  .container-md {
+    @apply max-w-sm mx-auto md:max-w-xl;
+  }
+  .container-lg {
+    @apply max-w-md mx-auto lg:max-w-2xl;
+  }
+  .container-xl {
+    @apply max-w-lg mx-auto xl:max-w-4xl;
+  }
+  .container-2xl {
+    @apply max-w-xl mx-auto 2xl:max-w-6xl;
   }
 }
