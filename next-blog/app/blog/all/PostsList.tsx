@@ -24,7 +24,7 @@ export const PostsList = (props: PostListProps) => {
             className='block cursor-pointer border-2 rounded-md neo-shadow focus:shadow-none focus:translate-x-1 focus:translate-y-1 transform transition-shadow duration-100'
           >
             <article className='w-full h-full'>
-              <figure className='w-full h-30 md:h-40 lg:h-72 border-b-2'>
+              <figure className='w-full h-30 md:h-40 lg:h-72 border-b-2 '>
                 {post.imgURL ? (
                   <Image
                     src={post.imgURL}
