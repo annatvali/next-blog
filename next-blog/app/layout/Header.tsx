@@ -9,10 +9,13 @@ const Header = (props: Props) => {
   return (
     <SessionProvider>
       <div>
-        <header className='flex justify-between border-b'>
-          <Link href='/' className='text-4xl font-bold Linkx-4 py-4'>
+        <header className='flex justify-between bg-slate-950 p-4'>
+          <Link
+            href='/'
+            className='text-4xl text-white font-bold Link p-4'
+          >
             Next
-            <span className='text-green-400'>Blog</span>
+            <span className='text-green-400 ml-2'>Blog</span>
           </Link>
           <AuthButton />
         </header>

@@ -206,7 +206,7 @@ const NewBlogForm = (props: Props) => {
         </div>
       </div>
     );
-    console.log(props.blogCategories)
+    console.log(props.blogCategories);
   return (
     <div className='min-h-[calc(100vh-130px)] py-2 container flex flex-col mt-12'>
       <form

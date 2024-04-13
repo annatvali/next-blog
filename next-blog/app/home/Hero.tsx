@@ -14,9 +14,9 @@ const Hero = (props: Props) => {
       </div>
       <div className='col-span-6 justify-self-center sm:justify-self-end'>
         <Image
-          src='/pedestrian-crossing.jpg'
-          width={320}
-          height={479}
+          src='/kent-tupas-xVLdFIxcDCc-unsplash.jpg'
+          width={516.6}
+          height={344.416}
           alt='People crossing pedestrian crossing'
         />
       </div>
