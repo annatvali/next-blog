@@ -23,7 +23,7 @@ const Footer = (props: Props) => {
           <a href='https://github.com' target='_blank' className='mr-3'>
             <Image src={githubIcon} alt='github' width={32} height={32} />
           </a>
-          <a href='https://twitter.com' target='_blank'>
+          <a href='https://discord.com' target='_blank'>
             <Image src={discordIcon} alt='discord' width={48} height={48} />
           </a>
         </div>
