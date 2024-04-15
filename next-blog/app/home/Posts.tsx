@@ -6,7 +6,12 @@ const prisma = new PrismaClient();
 type Props = {};
 
 const Posts = async (props: Props) => {
-  const posts = await prisma.post.findMany();
+  const posts = await prisma.post.findMany({
+    take: 6,
+    orderBy: {
+      createdAt: "desc",
+    }
+  });
 
   const bgClasses = ["bg-blue-400", "bg-green-400", "bg-yellow-400", "bg-indigo-400", "bg-purple-400", "bg-pink-400"];
 

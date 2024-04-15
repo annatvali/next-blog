@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { CategorySelectorProps, CategorySelector } from './CategorySelector';
 import { PostListProps, PostsList } from './PostsList';
 
