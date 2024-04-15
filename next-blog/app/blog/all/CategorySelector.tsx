@@ -21,7 +21,7 @@ export const CategorySelector = (props: CategorySelectorPropsWithState) => {
   ];
 
   return (
-    <div className='flex  flex-col justify-center my-4'>
+    <div className='flex flex-col justify-center my-4'>
       <div className='flex justify-center flex-wrap'>
         {props.categories.map((category, index) => (
           <button
