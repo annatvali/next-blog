@@ -50,7 +50,6 @@ project consist of 3 pain pages with responsive layout:
 <br />
 <img src="https://github.com/annatvali/next-blog/assets/110423142/e01b769f-ad30-48ba-abae-9053f960e780" alt="new-post-home" height="300px">
 
-## Funcitonality:
 ## Project Functionality
 
 1. **Authentication:**
