@@ -9,7 +9,7 @@ const Posts = async (props: Props) => {
   const posts = await prisma.post.findMany({
     take: 6,
     orderBy: {
-      createdAt: "desc",
+      createdAt: "asc",
     }
   });
 
