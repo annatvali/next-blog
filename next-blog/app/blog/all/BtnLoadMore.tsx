@@ -12,7 +12,7 @@ const BtnLoadMore: React.FC<BtnLoadMoreProps> = ({
   return showButton ? (
     <button
       onClick={handleLoadMore}
-      className='text-xl text-white font-semibold rounded-full border-2 border-purple-700 bg-purple-700 px-8 py-4'
+      className='text-xl text-white font-semibold rounded-full border-2 border-purple-600 bg-purple-600 hover:bg-purple-800 hover:border-purple-800 px-8 py-4'
     >
       Load More
     </button>
