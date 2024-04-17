@@ -25,6 +25,11 @@ Prisma is an open-source database toolkit that simplifies database access and ma
 
 <img src="https://cdn.worldvectorlogo.com/logos/prisma-2.svg" height="40"/>
 
+### PostgreSQL
+PostgreSQL is a powerful, open-source relational database management system known for its reliability, robustness, and extensive feature set. It is widely used in enterprise and web applications for storing and managing structured data.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/240px-Postgresql_elephant.svg.png" height="40" />
+
 ## Beehiive
 Beehiive is used to subscribe newsletter for net-blog users.
 
