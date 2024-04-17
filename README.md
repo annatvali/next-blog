@@ -50,3 +50,21 @@ project consist of 3 pain pages with responsive layout:
 <br />
 <img src="https://github.com/annatvali/next-blog/assets/110423142/e01b769f-ad30-48ba-abae-9053f960e780" alt="new-post-home" height="300px">
 
+## Funcitonality:
+## Project Functionality
+
+1. **Authentication:**
+   - Users can sign in and sign out using their **Google** or **GitHub** accounts.
+   - Authentication is implemented using NextAuth, ensuring secure access to the application.
+
+2. **Post Creation and Publishing:**
+   - Signed-in users can create new blog posts within the application.
+   - They have the ability to publish their posts for others to read and engage with.
+
+3. **Newsletter Subscription:**
+   - The application offers a newsletter subscription feature.
+   - Users can stay updated with the latest news and updates by providing a valid email address.
+
+4. **All Posts Page with Load More Functionality:**
+   - The application includes an "All Posts" page where users can browse all available blog posts.
+   - It features a "Load More" functionality, allowing users to access posts in chunks for better user experience and performance.
