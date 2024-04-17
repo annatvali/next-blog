@@ -2,20 +2,17 @@ import React from 'react';
 import githubIcon from '../../public/github-icon.png';
 import discordIcon from '../../public/discord-icon.png';
 import Image from 'next/image';
-import Link from 'next/link';
+import Logo from './Logo';
 
 type Props = {};
 
 const Footer = (props: Props) => {
   return (
     <div className='w-full bg-black text-white py-12 px-4'>
-      <div className='flex flex-col sm:flex-row container justify-between'>
+      <div className='flex flex-col sm:flex-row justify-between'>
         <div className='flex flex-row items-center pb-6'>
           <div>
-            <Link href='/' className='text-4xl text-white font-bold Link p-4'>
-              Next
-              <span className='text-green-400 ml-2'>Blog</span>
-            </Link>
+            <Logo />
             <div className='text-sm p-4'>© 2024 Next Blog</div>
           </div>
         </div>
