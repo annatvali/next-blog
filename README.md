@@ -1,4 +1,4 @@
-# Project Name: Next.js Full-Stack Blog
+# Project Name: Next-Blog
 
 **Overview**
 
@@ -30,10 +30,15 @@ PostgreSQL is a powerful, open-source relational database management system know
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/240px-Postgresql_elephant.svg.png" height="40" />
 
-## Beehiive
+### Beehiive
 Beehiive is used to subscribe newsletter for net-blog users.
 
 <img src="https://theme.zdassets.com/theme_assets/11651456/b310d005f5cefa45955cbb0f0b32ce9b7183a2b5.png" height="40" />
+
+### Tailwind CSS Integration:
+The project utilizes Tailwind CSS for efficient styling and responsive design. Tailwind CSS offers utility-first CSS classes, enabling rapid development and customization of the application's appearance.
+
+<img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" height="40" />
 
 ## Project Layout:
 
