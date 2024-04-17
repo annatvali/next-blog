@@ -10,9 +10,10 @@ const Avatar = () => {
       {session && (
           <Image
             src={session.user?.image ?? '/default-user-img.png'}
-            width={40}
-            height={40}
+            width={48}
+            height={48}
             alt={session.user?.name ?? 'user avatar'}
+            className='rounded-full'
           />
       )}
     </div>

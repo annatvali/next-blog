@@ -1,5 +1,6 @@
 "use client";
 import { signIn, signOut, useSession } from "next-auth/react";
+import Avatar from "./Avatar";
 
 type Props = {};
 
@@ -13,15 +14,18 @@ export const Button = (props: Props) => {
   );
 
   if (session) return (
-    <button
-      className='text-2xl font-bold text-white rounded bg-purple-400 px-4 py-2'
-      onClick={(e) => {
-        e.preventDefault();
-        signOut();
-      }}
-    >
-      Sign Out
-    </button>
+    <div className="flex items-center gap-4">
+      <Avatar />
+      <button
+        className='text-xl font-bold text-white rounded bg-purple-400 px-4 py-2'
+        onClick={(e) => {
+          e.preventDefault();
+          signOut();
+        }}
+      >
+        Sign Out
+      </button>
+    </div>
   );
 
   return (
