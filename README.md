@@ -8,7 +8,7 @@ Welcome to the Next.js Full-Stack Blog project! This application is designed to 
 ### Next.js
 Next.js is a React framework that enables server-side rendering, static site generation, and routing for React applications. It simplifies the development of React-based web applications by providing a streamlined workflow and efficient performance optimizations.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/240px-Nextjs-logo.svg.png" height="40" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/240px-Nextjs-logo.svg.png" height="30" />
 
 ### TypeScript
 TypeScript is a superset of JavaScript that adds static typing to the language, enhancing code quality and developer productivity. It allows for better code organization, refactoring, and catching errors at compile-time rather than runtime.
@@ -18,7 +18,7 @@ TypeScript is a superset of JavaScript that adds static typing to the language, 
 ### UploadThings
 UploadThings is a library or service for handling file uploads in web applications. It simplifies the process of uploading files securely to the server and managing them efficiently.
 
-<img src="https://raw.githubusercontent.com/typehero/typehero/main/media/uploadthing-logo.svg?sanitize=true" height="40" />
+<img src="https://raw.githubusercontent.com/typehero/typehero/main/media/uploadthing-logo.svg?sanitize=true" height="30" />
 
 ### Prisma
 Prisma is an open-source database toolkit that simplifies database access and management in modern applications. It provides an ORM (Object-Relational Mapping) layer for interacting with databases, allowing developers to write database queries using a type-safe API.
