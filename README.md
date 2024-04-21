@@ -1,10 +1,10 @@
-# Project Name: Next-Blog
+# Next-Blog
 
 **Overview**
 
 Welcome to the Next.js Full-Stack Blog project! This application is designed to empower users to create, publish, and explore blog posts effortlessly. Whether you're a seasoned blogger or just starting out, our platform provides the tools you need to share your thoughts with the world. With features like category-based browsing and newsletter subscriptions, staying connected has never been easier.
 
-## Project uses:
+## Used Technologies:
 ### Next.js
 Next.js is a React framework that enables server-side rendering, static site generation, and routing for React applications. It simplifies the development of React-based web applications by providing a streamlined workflow and efficient performance optimizations.
 
@@ -36,11 +36,11 @@ The Railway PostgreSQL database service allows you to provision and connect to a
 <img src="https://png.pngtree.com/png-vector/20230109/ourmid/pngtree-train-on-a-white-background-png-image_6556767.png" height="60" />
 
 ### Beehiive
-Beehiive is used to subscribe newsletter for net-blog users.
+Beehiive is used to subscribe newsletter for next-blog users.
 
 <img src="https://theme.zdassets.com/theme_assets/11651456/b310d005f5cefa45955cbb0f0b32ce9b7183a2b5.png" height="40" />
 
-### Tailwind CSS Integration:
+### Tailwind CSS:
 The project utilizes Tailwind CSS for efficient styling and responsive design. Tailwind CSS offers utility-first CSS classes, enabling rapid development and customization of the application's appearance.
 
 <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" height="40" />
