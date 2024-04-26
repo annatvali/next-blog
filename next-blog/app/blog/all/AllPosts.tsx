@@ -27,7 +27,7 @@ const AllPosts = (props: Props) => {
         selectedCategoryId={selectedCategoryId}
         selectCategory={handleCategoryClick}
       />
-      <PostsList posts={filteredPosts} />
+      <PostsList posts={filteredPosts} newBlog={null} />
     </>
   );
 };

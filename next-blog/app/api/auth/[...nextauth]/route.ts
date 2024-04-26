@@ -57,6 +57,13 @@ const handler = NextAuth({
 
       return true;
     },
+    async session({ session, token }) {
+      let sessionWithId = session as any;
+      if (sessionWithId.user) {
+        sessionWithId.user.id = token.id;
+      }
+      return session;
+    },
   },
   secret: process.env.NEXTAUTH_URLSecret as string,
   debug: true,
