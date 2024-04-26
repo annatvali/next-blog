@@ -58,7 +58,7 @@ project consist of 3 pain pages with responsive layout:
 <img src="https://github.com/annatvali/next-blog/assets/110423142/485b4d7e-dbc3-476c-8544-3b0b781a889b" alt="all-posts-home" height="300px">
 <img src="https://github.com/annatvali/next-blog/assets/110423142/22ce50a8-7c93-4c19-9c2c-1718d1e0a7e3" alt="all-posts-loaded-home" height="300px">
 <br />
-<img src="https://github.com/annatvali/next-blog/assets/110423142/e01b769f-ad30-48ba-abae-9053f960e780" alt="new-post-home" height="300px">
+<img src="https://github.com/annatvali/next-blog/assets/110423142/99735eaf-45e9-41f8-9d23-9215945343e1" alt="new-post-home" height="300px">
 
 ## Project Functionality
 
