@@ -63,7 +63,7 @@ project consist of 3 pain pages with responsive layout:
 ## Project Functionality
 
 1. **Authentication:**
-   - Users can sign in and sign out using their **Google** or **GitHub** accounts.
+   - Users can sign in and sign out using their **Google** <img src="https://banner2.cleanpng.com/20180423/gkw/kisspng-google-logo-logo-logo-5ade7dc753b015.9317679115245306313428.jpg" width="40" height="40" alt="google logo" /> or **GitHub** <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40" height="40" /> accounts.
    - Authentication is implemented using NextAuth, ensuring secure access to the application.
 
 2. **Post Creation and Publishing:**
@@ -77,3 +77,11 @@ project consist of 3 pain pages with responsive layout:
 4. **All Posts Page with Load More Functionality:**
    - The application includes an "All Posts" page where users can browse all available blog posts.
    - It features a "Load More" functionality, allowing users to access posts in chunks for better user experience and performance.
+
+5. **Filter By Category**
+   - For All Posts page there is a filter by category functionality.
+   - User can filter posts by provided categories:
+       - Nature
+       - Architecture
+       - Culinary
+
