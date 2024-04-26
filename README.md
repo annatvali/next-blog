@@ -8,7 +8,12 @@ Welcome to the Next.js Full-Stack Blog project! This application is designed to 
 ### Next.js
 Next.js is a React framework that enables server-side rendering, static site generation, and routing for React applications. It simplifies the development of React-based web applications by providing a streamlined workflow and efficient performance optimizations.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/240px-Nextjs-logo.svg.png" height="30" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/240px-Nextjs-logo.svg.png" height="30" alt="NextJS" />
+
+### NextAuth.js
+Authentication Providers in NextAuth.js are OAuth definitions that allow your users to sign in with their favorite preexisting logins. You can use any of our many predefined providers, or write your own custom OAuth configuration.
+
+<img src="https://next-auth.js.org/img/logo/logo-sm.png" height="40" alt="NextAuthJS" />
 
 ### TypeScript
 TypeScript is a superset of JavaScript that adds static typing to the language, enhancing code quality and developer productivity. It allows for better code organization, refactoring, and catching errors at compile-time rather than runtime.
@@ -63,7 +68,7 @@ project consist of 3 pain pages with responsive layout:
 ## Project Functionality
 
 1. **Authentication:**
-   - Users can sign in and sign out using their **Google** <img src="https://banner2.cleanpng.com/20180423/gkw/kisspng-google-logo-logo-logo-5ade7dc753b015.9317679115245306313428.jpg" width="40" height="40" alt="google logo" /> or **GitHub** <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40" height="40" /> accounts.
+   - Users can sign in and sign out using their **Google** <img src="https://banner2.cleanpng.com/20180423/gkw/kisspng-google-logo-logo-logo-5ade7dc753b015.9317679115245306313428.jpg" width="20" height="20" alt="google logo" /> or **GitHub** <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="20" height="20" /> accounts.
    - Authentication is implemented using NextAuth, ensuring secure access to the application.
 
 2. **Post Creation and Publishing:**
