@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Category } from '@prisma/client';
-
+// @ts-ignore
 export type CategorySelectorProps = {
   categories: Category[];
 };

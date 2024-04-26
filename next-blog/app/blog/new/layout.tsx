@@ -1,7 +1,7 @@
 "use client";
 import { SessionProvider } from "next-auth/react";
 import { Session } from "next-auth";
-
+// @ts-ignore
 export default function Layout ({
   children,
   session

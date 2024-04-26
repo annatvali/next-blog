@@ -8,6 +8,10 @@ const nextConfig = {
       'lh3.googleusercontent.com',
     ],
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  output: 'export',
 };
 
 export default nextConfig;

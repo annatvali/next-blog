@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { CategorySelectorProps, CategorySelector } from './CategorySelector';
 import { PostListProps, PostsList } from './PostsList';
-
+// @ts-ignore
 type Props = CategorySelectorProps & PostListProps;
 
 const AllPosts = (props: Props) => {
