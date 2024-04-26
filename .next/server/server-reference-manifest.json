@@ -1,5 +1,22 @@
 {
-  "node": {},
+  "node": {
+    "1cb8e7245a014b219620fe52b7409effb57303af": {
+      "workers": {
+        "app/blog/new/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CTrainings%5C%5CComSchool%5C%5Cnext-blog%5C%5Capp%5C%5Cactions%5C%5CgetCategories.ts%22%2C%5B%22getCategories%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/blog/new/page": "rsc"
+      }
+    },
+    "0a49b0a42a421bc4dfb245420c4b42fb7366a2ac": {
+      "workers": {
+        "app/blog/new/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CTrainings%5C%5CComSchool%5C%5Cnext-blog%5C%5Capp%5C%5Cactions%5C%5CpublishPost.ts%22%2C%5B%22createPost%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/blog/new/page": "action-browser"
+      }
+    }
+  },
   "edge": {},
   "encryptionKey": "MxVp53TexpiqKAWKY+B5EKlTO2GJx04T1QSgFbTvaEU="
 }

@@ -10,6 +10,22 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
+    ],
+    "/blog/all/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/blog/all/page.js"
+    ],
+    "/blog/new/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/blog/new/page.css",
+      "static/chunks/app/blog/new/page.js"
+    ],
+    "/blog/new/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/blog/new/layout.js"
     ]
   }
 }
