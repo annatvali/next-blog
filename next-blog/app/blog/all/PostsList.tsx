@@ -22,18 +22,15 @@ export const PostsList = (props: PostListProps) => {
 
   return (
     <>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-12 mt-4'>
+      <div className='grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-3 gap-12 mt-4'>
         {props.posts.slice(0, numPostsToShow).map((post: Post) => (
-          <div
-            key={post.id}
-            className='w-full sm:w-40 md:w-60 lg:w-80 h-full bg-white'
-          >
+          <div key={post.id} className='w-full h-full bg-white'>
             <Link
               href={`/blog/${post.id}`}
               className='block cursor-pointer bg-gray-100 rounded-md neo-shadow focus:shadow-none focus:translate-x-1 focus:translate-y-1 transform transition-shadow duration-100'
             >
               <article className='w-full h-full'>
-                <figure className='w-full h-30 md:h-40 lg:h-72 '>
+                <figure className='w-full h-30 lg:h-72'>
                   {post.imgURL ? (
                     <Image
                       src={post.imgURL}

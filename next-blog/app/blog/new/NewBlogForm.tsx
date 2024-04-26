@@ -59,7 +59,7 @@ const NewBlogForm = (props: Props) => {
 
   if (submitted)
     return (
-      <div className='py-2 container flex flex-col mt-12'>
+      <div className='py-2 container flex flex-col'>
         <div className='flex flex-col flex-1 items-stretch justify-center h-full text-left border p-8'>
           <h1 className='text-4xl'>Your post has been published:</h1>
           <Link
@@ -74,12 +74,12 @@ const NewBlogForm = (props: Props) => {
   return (
     <div className='min-h-[calc(100vh-130px)] py-2 container flex flex-col mt-12'>
       <form
-        className='flex flex-col flex-1 items-stretch justify-center h-full text-left'
+        className='flex flex-col flex-1 items-stretch justify-center h-full text-left my-12'
         onSubmit={handleSubmit}
       >
         <input
           type='text'
-          className='text-6xl focus-visible:outline-none'
+          className='text-3xl font-bold bg-blue-100 rounded-md focus-visible:outline-none p-6'
           placeholder='Title'
           value={title}
           onChange={(e) => setTitle(e.target.value)}
@@ -87,12 +87,12 @@ const NewBlogForm = (props: Props) => {
         />
         <textarea
           name='content'
-          className='flex-1 bg-gray-200 rounded-md focus-visible:outline-none text-4xl p-4 mt-2'
+          className='flex-1 bg-pink-100 rounded-md focus-visible:outline-none text-4xl p-6 mt-4'
           placeholder='Content ...'
           value={content}
           onChange={(e) => setContent(e.target.value)}
         />
-        <div className='self-start'>
+        <div className='self-start mt-4'>
           {thumbnail && (
             <Image
               src={thumbnail}
@@ -109,8 +109,6 @@ const NewBlogForm = (props: Props) => {
             className='items-start'
             endpoint='imageUploader'
             onClientUploadComplete={(res) => {
-              // Do something with the response
-              console.log('Files: ', res);
               if (res) {
                 setThumbnail(res[0].url);
               }
@@ -127,7 +125,7 @@ const NewBlogForm = (props: Props) => {
         </div>
         <button
           type='submit'
-          className='w-fit-content text-white bg-indigo-400 px-4 py-2 sm:px-6 sm:py-4 mt-6 border-2 rounded shadow-[0.25rem_0.25rem_0px_0px_rgba(0,0,0,1)]'
+          className='w-fit-content text-white text-2xl text-bold bg-indigo-300 px-4 py-2 sm:px-6 sm:py-4 mt-6 border-2 rounded'
         >
           Create
         </button>
